@@ -325,7 +325,7 @@ function ZoomableImage({
   loading?: 'eager' | 'lazy'
 }) {
   const [open, setOpen] = useState(false)
-  const cropClass = src === '/GABARIT_LISSAGE.png'
+  const cropClass = src === '/GABARIT_LISSAGE.jpg'
     ? 'crop-gabarit-lissage'
     : src === '/OT_POINT_EPURE.png'
       ? 'crop-point-epure'
@@ -581,7 +581,7 @@ function HomePage({ onNavigate }: { onNavigate: (t: Tab) => void }) {
         <div style={{ position: 'relative', zIndex: 2, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 clamp(28px,7vw,110px)' }}>
           <div className="home-hero-portrait" style={{ width: 'clamp(120px,15vw,170px)', height: 'clamp(120px,15vw,170px)', minWidth: 'clamp(120px,15vw,170px)', minHeight: 'clamp(120px,15vw,170px)', padding: 6, marginBottom: 18, overflow: 'hidden', borderRadius: '50%', background: 'rgba(255,255,255,0.94)', border: `2px solid ${C.teal}`, boxShadow: '0 16px 45px rgba(8,48,86,0.24)', boxSizing: 'border-box', alignSelf: 'flex-start', flex: '0 0 auto' }}>
             <img
-              src="/portrait-quentin.png"
+              src="/portrait-quentin.webp"
               alt="Portrait professionnel de Quentin Pecegueiro"
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 18%', display: 'block', borderRadius: '50%' }}
             />
@@ -1139,7 +1139,7 @@ function PageActivitePro() {
       year: '2024–2025',
       tags: ['Gabarit', 'Outillage', 'Aéronautique'],
       desc: "Gabarit de contrôle en matière plastique transparente pour le pare-brise droit. Référence 374-334-52-1 IND0.",
-      imgs: ['/GABARIT.png'],
+      imgs: ['/GABARIT.jpg'],
       detail: "Réalisation d’un gabarit de contrôle dimensionnel en plastique transparent pour le pare-brise droit — sortie des sondes du montant inférieur (référence pièce : 374-334-52-1 IND0). Ce gabarit permet de vérifier et de contrôler le positionnement des sondes de température sur un vitrage. Il est utilisé en production pour le contrôle systématique des pièces fabriquées. La matière transparente a été choisie pour permettre une visualisation directe des repères lors du contrôle. La conception a nécessité une grande rigueur ainsi qu’une maîtrise des tolérances géométriques propres aux équipements aéronautiques.",
       context: "Ce projet s’est inscrit dans ma mission de support au service Outillage lors de mes trois années d’alternance chez Saint-Gobain Sully. Il m’a permis de développer mes compétences en lecture de plan, cotation fonctionnelle et conception d’outils de contrôle adaptés aux exigences du secteur aéronautique. J’ai travaillé en autonomie sous la supervision du responsable outillage, en lien direct avec les opérateurs de production.",
     },
@@ -1149,7 +1149,7 @@ function PageActivitePro() {
       year: '2024–2025',
       tags: ['Impression 3D', 'Gabarit', 'GMP'],
       desc: "Gabarit courbe imprimé en 3D pour le contrôle et le lissage de profils aéronautiques.",
-      imgs: ['/GABARIT_LISSAGE.png'],
+      imgs: ['/GABARIT_LISSAGE.jpg'],
       detail: "Conception et fabrication par impression 3D d’un gabarit de lissage à profil courbe. Cet outillage sert au contrôle et à la mise en forme de zones de joint sur le contour d’un vitrage aéronautique. La forme en arc assure la continuité de surface sur les zones à rayon de courbure constant. Le choix de l’impression 3D a permis d’obtenir rapidement une géométrie complexe, à moindre coût par rapport à d’autres méthodes de fabrication. La matière plastique utilisée offre à la fois la rigidité nécessaire au contrôle et une légèreté appréciable lors de la manipulation.",
       context: "La conception a été réalisée à l’aide d’un logiciel de CAO, à partir du profil nominal défini dans les modèles 3D du vitrage. Ce projet m’a permis de consolider mes compétences en modélisation 3D et d’appréhender les contraintes liées à l’impression additive dans un environnement industriel aéronautique.",
     },
@@ -1159,7 +1159,7 @@ function PageActivitePro() {
       year: '2024–2025',
       tags: ['Master', 'Composite', 'Outillage'],
       desc: "Fabrication de masters d'outillage en composite et mousse utilisés comme références dimensionnelles pour la production.",
-      imgs: ['/MASTER.png'],
+      imgs: ['/MASTER.jpg'],
       detail: "Réalisation de masters d’outillage de grandes dimensions en matériaux composites et en mousse structurelle. Ces masters servent de références géométriques pour la fabrication des outillages de production. Ils définissent la surface nominale de la pièce avec une grande précision, et leur conditionnement sur palette assure leur transport et leur conservation dans de bonnes conditions. Chaque master est élaboré à partir de données numériques issues de la CAO et nécessite un travail de finition soigné pour garantir la fidélité de la surface de référence.",
       context: "La réalisation de masters implique une coordination étroite avec le bureau d’études et les équipes de fabrication. J’ai participé activement à la préparation des matériaux, au drapage composite et au contrôle dimensionnel final, renforçant ainsi ma compréhension des procédés de fabrication en composites dans le secteur aéronautique.",
     },
@@ -1225,7 +1225,7 @@ function PageActivitePro() {
       year: '2025',
       tags: ['Squelette', 'Daher', 'Tôlerie'],
       desc: "Réalisation d’un outillage squelette métallique pour le pare-brise gauche Daher. Gabarit de mise en forme et de contrôle.",
-      imgs: ['/OT_SQUELETTE.png'],
+      imgs: ['/OT_SQUELETTE.jpg'],
       detail: "Au sein de la production de Saint-Gobain, il existe plusieurs types d’outillages ; les outillages de type « squelette » en font partie. Le principe consiste à réaliser des outillages mécano-soudés, parfois articulés, qui donnent sa forme au vitrage. Celui-ci vient en appui sur une fine bande, ce qui permet d’obtenir de meilleures caractéristiques optiques.",
       context: "Réalisé en autonomie tout au long de mes trois années d’alternance, cet outillage illustre ma progression dans la maîtrise des techniques d’outillage aéronautique. J’ai géré l’ensemble du processus : lecture du plan de définition, débit de matière, traçage, découpe, assemblage et contrôle final. Ce projet a renforcé mes compétences en tôlerie de précision et en outillage de référence.",
     },
@@ -1396,7 +1396,7 @@ function PageProjets() {
             "Le projet Neotech répond au besoin de positionner avec précision différents pare-brise aéronautiques afin de réaliser des opérations de contrôle dans des conditions répétables. L’outillage devait maintenir chaque vitrage dans une position précise, définie dans une autre étude, tout en facilitant les réglages nécessaires aux différentes références étudiées.",
             "La solution retenue repose sur une structure en profilés d’aluminium, équipée de supports réglables, de points d’appui localisés et de systèmes de serrage rapides. Cette architecture associe rigidité, accessibilité et modularité pour sécuriser la mise en position du vitrage.",
           ],
-          imgs: ['/OT_NEOTECH.png', '/OT_NEOTECH2.png'],
+          imgs: ['/OT_NEOTECH.jpg', '/OT_NEOTECH2.jpg'],
           captions: ['Vue générale du premier outillage Neotech réalisé', 'Détail des systèmes de maintien et de réglage sur le deuxième outillage Neotech réalisé'],
         },
         {
@@ -1932,8 +1932,8 @@ function PageGalerie() {
       title: 'Projets',
       description: 'De la conception aux vérifications, ces documents retracent les principales étapes techniques et économiques du projet.',
       images: [
-        { src: '/OT_NEOTECH.png', caption: 'Vue générale de l’outillage Neotech', fit: 'contain' },
-        { src: '/OT_NEOTECH2.png', caption: 'Détail des systèmes de maintien et de réglage', fit: 'contain' },
+        { src: '/OT_NEOTECH.jpg', caption: 'Vue générale de l’outillage Neotech', fit: 'contain' },
+        { src: '/OT_NEOTECH2.jpg', caption: 'Détail des systèmes de maintien et de réglage', fit: 'contain' },
         { src: '/NEOTECH_CAO_ETUDE_1.png', caption: 'Étude CAO 1 — architecture de l’outillage', fit: 'contain' },
         { src: '/NEOTECH_CAO_ETUDE_2.png', caption: 'Étude CAO 2 — assemblage avec le vitrage', fit: 'contain' },
         { src: '/NEOTECH_FICHE_POSITIONNEMENT.png', caption: 'Exemple de fiche de positionnement et de contrôle', fit: 'contain' },
@@ -1948,9 +1948,9 @@ function PageGalerie() {
       title: 'Autres réalisations',
       description: 'Une sélection de gabarits, masters et outillages conçus ou réalisés dans un contexte industriel aéronautique.',
       images: [
-        { src: '/GABARIT.png', caption: 'Gabarit de contrôle pour pare-brise droit', fit: 'contain' },
-        { src: '/GABARIT_LISSAGE.png', caption: 'Gabarit de lissage réalisé par impression 3D', fit: 'contain' },
-        { src: '/MASTER.png', caption: 'Masters d’outillage en matériaux composites et en mousse', fit: 'contain' },
+        { src: '/GABARIT.jpg', caption: 'Gabarit de contrôle pour pare-brise droit', fit: 'contain' },
+        { src: '/GABARIT_LISSAGE.jpg', caption: 'Gabarit de lissage réalisé par impression 3D', fit: 'contain' },
+        { src: '/MASTER.jpg', caption: 'Masters d’outillage en matériaux composites et en mousse', fit: 'contain' },
         { src: '/OT_POINT_EPURE.png', caption: 'Étude CAO d’un outillage point d’épure', fit: 'contain' },
         { src: '/MODIFICATION_OUTILLAGE_INJECTION_ENSEMBLE.png', caption: 'Vue d’ensemble de l’outillage d’injection de joint modifié', fit: 'contain' },
         { src: '/MODIFICATION_OUTILLAGE_INJECTION_DETAIL.png', caption: 'Détail du dispositif de contrôle d’une cote au dixième', fit: 'contain' },
@@ -1960,7 +1960,7 @@ function PageGalerie() {
         { src: '/aeroglisseur-thermoformage.jpg', caption: 'Thermoformage de la coque de l’aéroglisseur', fit: 'contain' },
         { src: '/aeroglisseur-assemblage.jpg', caption: 'Assemblage du prototype d’aéroglisseur', fit: 'contain' },
         { src: '/aeroglisseur-prototype.jpg', caption: 'Prototype final de l’aéroglisseur', fit: 'contain' },
-        { src: '/OT_SQUELETTE.png', caption: 'Outillage squelette pour pare-brise gauche Daher', fit: 'contain' },
+        { src: '/OT_SQUELETTE.jpg', caption: 'Outillage squelette pour pare-brise gauche Daher', fit: 'contain' },
       ],
     },
     {
