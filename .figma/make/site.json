@@ -1,0 +1,11 @@
+{
+  "title": "PORTFOLIO_QUENTIN_PECEGUEIRO",
+  "description": "Showcases aeronautics and mechanical engineering expertise through organized tabs featuring personal background, professional activities, skills, and multimedia presentations.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
